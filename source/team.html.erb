@@ -1,0 +1,24 @@
+
+<div id="team">
+	
+
+
+ <ul class="list-inline text-center" >
+<h1>This template is built with <i class="fa fa-heart"></i> by</h1>
+
+
+<ul class="list-inline text-center">
+  <% ["Stinnson", "ad22323n"].each do |gh_username| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
+      <a href="github.com"><h3>
+      <i class="fa fa-github"></i><%= gh_username.capitalize %></h3></a>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "Meet the team", "team.html", class: "btn btn-primary" %>
+</div>
+
+
+<style>
+</style>
